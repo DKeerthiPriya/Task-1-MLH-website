@@ -14,22 +14,22 @@ function App() {
   const [results, setResults] = useState(null);
 
   useEffect(() => {
-    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric" + "&appid=" + process.env.REACT_APP_APIKEY)
-      .then(res => res.json())
-      .then(
-        (result) => {
-          if (result['cod'] !== 200) {
-            setIsLoaded(false)
-          } else {
-            setIsLoaded(true);
-            setResults(result);
-          }
-        },
-        (error) => {
-          setIsLoaded(true);
-          setError(error);
-        }
-      )
+    // fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric" + "&appid=" + process.env.REACT_APP_APIKEY)
+    //   .then(res => res.json())
+    //   .then(
+    //     (result) => {
+    //       if (result['cod'] !== 200) {
+    //         setIsLoaded(false)
+    //       } else {
+    //         setIsLoaded(true);
+    //         setResults(result);
+    //       }
+    //     },
+    //     (error) => {
+    //       setIsLoaded(true);
+    //       setError(error);
+    //     }
+    //   )
   }, [city])
 
   if (error) {
