@@ -1,0 +1,83 @@
+
+
+body {
+  margin :0px;
+  padding :0px;
+  background:url('../public/video_new.mp4');
+  background-size: 100%;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 10px;
+  width: 200px
+}
+
+.Results {
+  background-color: white;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: #133667;
+  padding: 10px;
+  box-shadow: 0 3px 6px #133667, 0 3px 6px #133667;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  height : 2em;
+  width : 100%;
+  font-style: normal;
+  font-size: 1em;
+  text-align: left; 
+  background-color: #133667;
+  transition: transform .3s;
+}
+
+.c:hover{
+  color : black;
+}
+
+.c{
+  display : inline-block;
+  margin : 0.3em;
+  margin-left: 4em;
+  padding : 0em;
+  color : white;
+}
+
+#id6{
+  text-align: center;
+  font-size: 1.5em;
+  font-style: normal;
+  color: #072145;
+}
+
+#id7:hover,#id8:hover,#id9:hover,#id10:hover{
+  transform: scale(1.5);
+}
+
+.c1{
+  height: 2em;
+  width: 2em;
+  transition: transform .3s;
+  margin: 0 auto;
+}
+
+.c2 {
+  margin-top: 15rem;
+}
